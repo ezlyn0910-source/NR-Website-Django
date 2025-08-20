@@ -1,0 +1,310 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - NR Intellitech{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+<!-- Add GSAP for advanced animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+{% endblock %}
+
+{% block content %}
+
+    <!-- Animated Hero Section -->
+    <section class="hero full-bleed" id="home">
+        <div class="particles" id="particles-js"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    <span class="title-line">Secure Data <span class="highlight"></span>for a Safer</span>
+                    <span class="title-line">Greener <span class="highlight"></span>Future</span>
+                </h1>
+                <p class="subtitle">Empowering businesses through innovative digital transformation and cutting-edge technology consulting since 2008.</p>
+                <div class="cta-container">
+                    <a href="#contact" class="cta-button primary">
+                        <i class="fas fa-arrow-right"></i> Get Started
+                    </a>
+                    <a href="#services" class="cta-button secondary">
+                        <i class="fas fa-search"></i> Explore Services
+                    </a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">19+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Countries Reached</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Animated Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow-down"></div>
+        </div>
+        
+    </section>
+
+    <section class="home-keyword full-bleed">
+        <div class="container">
+            <div class="keyword-track">
+                <div class="keyword-marquee">
+                    <span class="highlight">Cybersecurity </span> that keeps your data safe &nbsp; • &nbsp;
+                    <span class="highlight">Data Management </span> that streamlines your business &nbsp; • &nbsp;
+                    <span class="highlight">IT Solutions </span> tailored for your growth &nbsp; • &nbsp;
+                    <span class="highlight">Innovation </span> that drives efficiency &nbsp; • &nbsp;
+                    <span class="highlight">Reliability </span> you can count on &nbsp; • &nbsp;
+                </div>
+                <div class="keyword-marquee" aria-hidden="true">
+                    <span class="highlight">Cybersecurity</span> that keeps your data safe &nbsp; • &nbsp;
+                    <span class="highlight">Data Management</span> that streamlines your business &nbsp; • &nbsp;
+                    <span class="highlight">IT Solutions</span> tailored for your growth &nbsp; • &nbsp;
+                    <span class="highlight">Innovation</span> that drives efficiency &nbsp; • &nbsp;
+                    <span class="highlight">Reliability</span> you can count on &nbsp; • &nbsp;
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Preview Section with 3D Cards -->
+    <section class="home-services full-bleed" id="services">
+        <div class="container">
+            <div class="home-section-header">
+                <span class="home-section-subtitle">Our Expertise</span>
+                <h2 class="home-section-title">Strategic Services</h2>
+                <p class="home-section-description">Comprehensive technology solutions designed to drive your business forward in the digital age.</p>
+            </div>
+            <div class="home-services-grid">
+                <div class="home-service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="home-service-icon">
+                                <img src="static/images/datadestruction.png" alt="Data Destruction Image" class="service-image">
+                            </div>
+                            <div class="home-service-content">
+                                <h3>Secure Data Destruction</h3>
+                                <p>We ensure complete, irreversible elimination of your sensitive information, following strict industry standards and compliance requirements.</p>
+                                <span class="flip-indicator">Hover to learn more</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h4>Key Services</h4>
+                                <ul>
+                                    <li>Data Erasure</li>
+                                    <li>Degaussing</li>
+                                    <li>Hard Drive Drilling</li>
+                                    <li>Hard Drive Shredding</li>
+                                </ul>
+                                <a href="services.html#cloud" class="home-service-link">
+                                    Learn more <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="home-service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="home-service-icon">
+                                <img src="static/images/logistic.png" alt="Logistics Image" class="service-image">
+                            </div>
+                            <div class="home-service-content">
+                                <h3>IT Assets Handling & Logistics</h3>
+                                <p>From collection to final processing, we manage your IT assets with care, security, and efficiency.</p>
+                                <span class="flip-indicator">Hover to learn more</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h4>Key Services</h4>
+                                <ul>
+                                    <li>Logistics</li>
+                                    <li>Disposing of Equipment</li>
+                                </ul>
+                                <a href="services.html#analytics" class="home-service-link">
+                                    Learn more <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="home-service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="home-service-icon">
+                                <img src="static/images/reporting.png" alt="Reporting Image" class="service-image">
+                            </div>
+                            <div class="home-service-content">
+                                <h3>Compliance & Reporting</h3>
+                                <p>We provide full transparency and documentation to support your regulatory needs</p>
+                                <span class="flip-indicator">Hover to learn more</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h4>Key Services</h4>
+                                <ul>
+                                    <li>Certified Reporting</li>
+                                    <li>Premium Support</li>
+                                </ul>
+                                <a href="services.html#security" class="home-service-link">
+                                    Learn more <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="home-service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="home-service-icon">
+                                <img src="static/images/ecommerce.png" alt="E-Commerce Icon" class="service-image">
+                            </div>
+                            <div class="home-service-content">
+                                <h3>E-Commerce</h3>
+                                <p>Our online platform makes it simple to browse, purchase, and arrange services at your convenience.</p>
+                                <span class="flip-indicator">Hover to learn more</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h4>Key Services</h4>
+                                <ul>
+                                    <li>Shopee Store </li>
+                                </ul>
+                                <a href="services.html#analytics" class="home-service-link">
+                                    Learn more <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this section right after the home-services section -->
+    <section class="vstar-banner full-bleed">
+        <div class="container">
+            <div class="vstar-content">
+                <div class="vstar-text">
+                    <span class="vstar-subtitle">Our Premium Hardware</span>
+                    <h2 class="vstar-title">VstarSSD - Enterprise Grade Storage Solutions</h2>
+                    <p class="vstar-description">Discover our in-house line of high-performance, reliable SSD drives designed for enterprise environments and demanding workloads.</p>
+                    <a href="https://vstarssd.com" target="_blank" class="cta-button primary">
+                        <i class="fas fa-external-link-alt"></i> Explore VstarSSD
+                    </a>
+                </div>
+                <div class="vstar-image">
+                    <img src="static/images/vstar_harddrive.jpg" alt="VstarSSD Enterprise Drives" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Testimonials Section with Asymmetric Layout -->
+    <section class="home-testimonials full-bleed">
+        <div class="container">
+            <div class="home-section-header">
+                <span class="home-section-subtitle">Credibility</span>
+                <h2 class="home-section-title">Why Choose Us</h2>
+            </div>
+            <div class="home-testimonial-grid">
+                <div class="home-testimonial-card">
+                    <div class="home-testimonial-quote">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <p class="home-testimonial-title">Secure & User-Friendly Solutions</p>
+                    <p class="home-testimonial-content">We deliver industry-leading security measures integrated with streamlined, user-friendly processes. Our solutions ensure the highest level of data protection while maintaining operational efficiency and ease of use.</p>
+                    <div class="home-testimonial-author">
+                        
+                    </div>
+                </div>
+                <div class="home-testimonial-card">
+                    <div class="home-testimonial-quote">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <p class="home-testimonial-title">Consistent Quality</p>
+                    <p class="home-testimonial-content">Our commitment to excellence is reflected in every project we undertake. Through stringent quality control, skilled personnel, and proven methodologies, we consistently deliver dependable, high-standard results.</p>
+                    <div class="home-testimonial-author">
+                        
+                    </div>
+                </div>
+                <div class="home-testimonial-card">
+                    <div class="home-testimonial-quote">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+                        </svg>
+                    </div>
+                    <p class="home-testimonial-title">Tailored to Your Business</p>
+                    <p class="home-testimonial-content">We recognize that no two businesses are the same. Our services are fully adaptable, enabling us to develop solutions that meet your specific operational, regulatory, and strategic requirements.</p>
+                    <div class="home-testimonial-author">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trusted By Section with Logo Carousel -->
+    <section class="home-trusted-by full-bleed">
+        <div class="container">
+            <div class="home-section-header">
+                <span class="home-section-subtitle">Highlight</span>
+                <h2 class="home-section-title">Company Achievements</h2>
+            </div>
+            <div class="home-client-logos">
+                <div class="home-logo-slide">
+                    <img src="images/client1.png" alt="TechForward Inc." loading="lazy">
+                    <img src="images/client2.png" alt="Global Retail" loading="lazy">
+                    <img src="images/client3.png" alt="Financial Services Group" loading="lazy">
+                    <img src="images/client4.png" alt="Innovate Corp" loading="lazy">
+                    <img src="images/client5.png" alt="DataSystems" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section with Parallax Background -->
+    <section class="home-cta-section full-bleed">
+        <div class="home-parallax-overlay"></div>
+        <div class="container">
+            <div class="home-cta-content">
+                <h2>Ready to Innovate With Us?</h2>
+                <p>Schedule a meeting with our experts to discuss your technology needs and discover how we can help you achieve your goals.</p>
+                <a href="{% url 'contact' %}" class="cta-button primary">
+                    <i class="fas fa-calendar-check"></i> Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>  
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="{% static 'js/homepage.js' %}"></script>
+{% endblock %}

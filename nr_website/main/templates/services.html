@@ -1,0 +1,485 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Our Services - NR Intellitech{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- Services Hero Section -->
+<section class="services-hero full-bleed">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Our Comprehensive Services</h1>
+        <p class="subtitle">End-to-end solutions for secure data management and IT asset lifecycle</p>
+    </div>
+</section>
+
+<!-- Services Navigation -->
+<section class="services-nav full-bleed">
+    <div class="container">
+        <div class="service-links">
+            <a href="#data-destruction" class="service-link">
+                <i class="fas fa-shield-alt"></i> Data Destruction
+            </a>
+            <a href="#it-assets" class="service-link">
+                <i class="fas fa-server"></i> IT Assets Handling
+            </a>
+            <a href="#compliance" class="service-link">
+                <i class="fas fa-file-certificate"></i> Compliance
+            </a>
+            <a href="#ecommerce" class="service-link">
+                <i class="fas fa-shopping-cart"></i> E-Commerce
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Data Destruction Section -->
+<section id="data-destruction" class="service-section full-bleed">
+    <div class="container">
+        <div class="service-header">
+            <span class="service-tag">Secure Data Management</span>
+            <h2 class="service-title">Secure Data Destruction Services</h2>
+            <p class="service-intro">Complete, certified destruction of your sensitive data across all media types with full chain-of-custody documentation.</p>
+        </div>
+
+        <div class="service-features">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-hdd"></i>
+                </div>
+                <div class="feature-text">
+                    <h3>Media Types We Handle</h3>
+                    <p>Hard drives, SSDs, tapes, mobile devices, optical media, and all other data storage devices.</p>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="feature-text">
+                    <h3>Certified Methods</h3>
+                    <p>All methods meet or exceed NIST 800-88, DoD 5220.22-M, and other international standards.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="service-details">
+            <div class="service-image">
+                <img src="{% static 'images/destructions.png' %}" alt="Secure data destruction process" loading="lazy">
+            </div>
+            
+            <div class="service-content">
+                
+                <div class="service-methods">
+                    <h3>Our Destruction Methods</h3>
+                    <div class="methods-grid">
+                        <div class="service-process">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="method-card">
+                                    <h4>Data Erasure</h4>
+                                    <p>Software-based overwriting that renders data unrecoverable while preserving hardware for reuse.</p>
+                                    <ul>
+                                        <li>Supports all interface types (SATA, SAS, NVMe, etc.)</li>
+                                        <li>Multiple pass options available</li>
+                                        <li>Detailed reporting included</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="method-card">
+                                    <h4>Degaussing</h4>
+                                    <p>Powerful magnetic field disruption that permanently destroys data on magnetic media.</p>
+                                    <ul>
+                                        <li>Ideal for high-security requirements</li>
+                                        <li>Renders drives inoperable</li>
+                                        <li>Fast processing time</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="method-card">
+                                    <h4>Hard Drive Drilling</h4>
+                                    <p>Complete physical destruction through shredding, crushing, or disintegration.</p>
+                                    <ul>
+                                        <li>Visual verification of destruction</li>
+                                        <li>Handles all media types</li>
+                                        <li>Environmentally responsible recycling</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="method-card">
+                                    <h4>Hard Drive Shredding</h4>
+                                    <p>Powerful magnetic field disruption that permanently destroys data on magnetic media.</p>
+                                    <ul>
+                                        <li>Ideal for high-security requirements</li>
+                                        <li>Renders drives inoperable</li>
+                                        <li>Fast processing time</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-benefits">
+                    <h3>Key Benefits</h3>
+                    <div class="benefits-list">
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% data destruction guarantee</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Compliance with global regulations (GDPR, HIPAA, etc.)</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Secure chain-of-custody tracking</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Environmentally responsible disposal</span>
+                        </div>
+                    </div>
+                    
+                    <a href="{% url 'contact' %}" class="cta-button primary">
+                        <i class="fas fa-envelope"></i> Request Data Destruction Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- IT Assets Handling Section -->
+<section id="it-assets" class="service-section full-bleed alt-bg">
+    <div class="itcontainer">
+        <div class="service-header">
+            <span class="service-tag">End-to-End Management</span>
+            <h2 class="service-title">IT Assets Handling & Logistics</h2>
+            <p class="service-intro">Comprehensive logistics solutions for the secure transport, processing, and disposition of your IT equipment.</p>
+        </div>
+        
+        <div class="service-process">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                    <div class="method-card">
+                        <h4>Data Erasure</h4>
+                        <p>Software-based overwriting that renders data unrecoverable while preserving hardware for reuse.</p>
+                        <ul>
+                            <li>Supports all interface types (SATA, SAS, NVMe, etc.)</li>
+                            <li>Multiple pass options available</li>
+                            <li>Detailed reporting included</li>
+                        </ul>
+                    </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">2</div>
+                    <div class="method-card">
+                        <h4>Data Erasure</h4>
+                        <p>Software-based overwriting that renders data unrecoverable while preserving hardware for reuse.</p>
+                        <ul>
+                            <li>Supports all interface types (SATA, SAS, NVMe, etc.)</li>
+                            <li>Multiple pass options available</li>
+                            <li>Detailed reporting included</li>
+                        </ul>
+                    </div>
+            </div>
+            
+        </div>
+        
+        <div class="service-specializations">
+            <h3>Specialized Handling For:</h3>
+            <div class="specialization-cards">
+                <div class="specialization-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h4>Data Center Decommissioning</h4>
+                    <p>Full-service solutions for retiring data center equipment with minimal downtime.</p>
+                </div>
+                
+                <div class="specialization-card">
+                    <i class="fas fa-laptop"></i>
+                    <h4>Employee Device Returns</h4>
+                    <p>Secure collection and processing of end-of-lease or terminated employee devices.</p>
+                </div>
+                
+                <div class="specialization-card">
+                    <i class="fas fa-warehouse"></i>
+                    <h4>Bulk IT Asset Disposition</h4>
+                    <p>High-volume processing for corporate refresh cycles and facility closures.</p>
+                </div>
+            </div>
+            
+            <div class="cta-container">
+                <a href="{% url 'contact' %}" class="cta-button primary">
+                    <i class="fas fa-truck"></i> Schedule Asset Pickup
+                </a>
+                <a href="#compliance" class="cta-button secondary">
+                    <i class="fas fa-file-alt"></i> View Compliance Details
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Compliance & Reporting Section -->
+<section id="compliance" class="service-section full-bleed">
+    <div class="container">
+        <div class="service-header">
+            <span class="service-tag">Regulatory Assurance</span>
+            <h2 class="service-title">Compliance & Reporting</h2>
+            <p class="service-intro">Comprehensive documentation and audit support to meet your regulatory and internal compliance requirements.</p>
+        </div>
+
+        <div class="service-process">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Certified Reporting</h3>
+                    <p>Secure pickup and transport using GPS-tracked vehicles with tamper-evident seals. We service corporate offices, data centers, and remote locations.</p>
+                    <ul>
+                        <li>Nationwide collection network</li>
+                        <li>Flexible scheduling</li>
+                        <li>Real-time tracking</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Premium Support</h3>
+                    <p>Detailed inventory management with barcode/RFID tracking and condition reporting for each asset.</p>
+                    <ul>
+                        <li>Serial number capture</li>
+                        <li>Functional testing</li>
+                        <li>Data-bearing identification</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="compliance-grid">
+            <div class="compliance-standards">
+                <h3>Standards We Meet</h3>
+                <div class="standards-list">
+                    <div class="standard">
+                        <div class="standard-logo">
+                            <img src="{% static 'images/nist-logo.png' %}" alt="NIST Logo" loading="lazy">
+                        </div>
+                        <div class="standard-details">
+                            <h4>NIST 800-88</h4>
+                            <p>Guidelines for Media Sanitization from the National Institute of Standards and Technology.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="standard">
+                        <div class="standard-logo">
+                            <img src="{% static 'images/gdpr-logo.png' %}" alt="GDPR Logo" loading="lazy">
+                        </div>
+                        <div class="standard-details">
+                            <h4>GDPR Compliance</h4>
+                            <p>Meeting EU General Data Protection Regulation requirements for data erasure.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="standard">
+                        <div class="standard-logo">
+                            <img src="{% static 'images/hipaa-logo.png' %}" alt="HIPAA Logo" loading="lazy">
+                        </div>
+                        <div class="standard-details">
+                            <h4>HIPAA</h4>
+                            <p>Health Insurance Portability and Accountability Act requirements for PHI destruction.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="standard">
+                        <div class="standard-logo">
+                            <img src="{% static 'images/r2-logo.png' %}" alt="R2 Logo" loading="lazy">
+                        </div>
+                        <div class="standard-details">
+                            <h4>R2v3 Certified</h4>
+                            <p>Responsible Recycling practices for electronics with data security components.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reporting-features">
+                <h3>Our Reporting Capabilities</h3>
+                <div class="reporting-cards">
+                    <div class="reporting-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Certificates of Destruction</h4>
+                        <p>Individually serialized certificates for each device processed, including method used and date/time of destruction.</p>
+                    </div>
+                    
+                    <div class="reporting-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h4>Chain of Custody</h4>
+                        <p>Detailed tracking from collection through final disposition with personnel verification at each step.</p>
+                    </div>
+                    
+                    <div class="reporting-card">
+                        <i class="fas fa-recycle"></i>
+                        <h4>Environmental Reporting</h4>
+                        <p>Documentation of responsible recycling practices and waste stream management.</p>
+                    </div>
+                    
+                    <div class="reporting-card">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        <h4>Remarketing Reports</h4>
+                        <p>For assets selected for resale, complete accounting of sale proceeds and asset details.</p>
+                    </div>
+                </div>
+                
+                <div class="custom-reporting">
+                    <h4>Custom Reporting Options</h4>
+                    <p>We can tailor reports to your specific requirements including:</p>
+                    <ul>
+                        <li>Department/cost center breakdowns</li>
+                        <li>Custom data fields from your asset database</li>
+                        <li>Integration with your internal systems</li>
+                        <li>Scheduled report delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="compliance-cta">
+            <div class="cta-content">
+                <h3>Need Specific Compliance Documentation?</h3>
+                <p>Our team can help identify the exact reporting you need for your industry and jurisdiction.</p>
+                <a href="{% url 'contact' %}" class="cta-button primary">
+                    <i class="fas fa-headset"></i> Compliance Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- E-Commerce Section -->
+<section id="ecommerce" class="service-section full-bleed alt-bg">
+    <div class="container">
+        <div class="service-header">
+            <span class="service-tag">Online Convenience</span>
+            <h2 class="service-title">E-Commerce Platform</h2>
+            <p class="service-intro">Our user-friendly online store makes it simple to purchase services and schedule pickups at your convenience.</p>
+        </div>
+        
+        <div class="ecommerce-features">
+            <div class="ecommerce-image">
+                <img src="{% static 'images/ecommerce-dashboard.jpg' %}" alt="E-Commerce Platform" loading="lazy">
+                <div class="platform-badges">
+                    <div class="badge">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Mobile Friendly</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure Payments</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ecommerce-details">
+                <h3>Platform Features</h3>
+                
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div>
+                            <h4>Service Selection</h4>
+                            <p>Choose from our full range of services including data destruction, equipment recycling, and certified reporting.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <h4>Scheduling</h4>
+                            <p>Book pickup dates and times that work for your operations with real-time availability.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-file-invoice"></i>
+                        <div>
+                            <h4>Instant Quotes</h4>
+                            <p>Get real-time pricing based on your specific requirements and volume.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <i class="fas fa-truck"></i>
+                        <div>
+                            <h4>Order Tracking</h4>
+                            <p>Monitor your service requests from confirmation through completion.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="account-benefits">
+                    <h4>Registered Account Benefits</h4>
+                    <ul>
+                        <li>Save frequently used service configurations</li>
+                        <li>Access to order history and documentation</li>
+                        <li>Volume pricing discounts</li>
+                        <li>Dedicated account management</li>
+                    </ul>
+                </div>
+                
+                <div class="ecommerce-cta">
+                    <a href="https://shopee.com/nrintellitech" target="_blank" class="cta-button primary">
+                        <i class="fas fa-external-link-alt"></i> Visit Our Shopee Store
+                    </a>
+                    <a href="{% url 'contact' %}" class="cta-button secondary">
+                        <i class="fas fa-user-plus"></i> Request Corporate Account
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service CTA Section -->
+<section class="service-cta full-bleed">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Not Sure Which Service You Need?</h2>
+            <p>Our technology consultants can assess your requirements and recommend the optimal solution.</p>
+            <div class="cta-buttons">
+                <a href="{% url 'contact' %}" class="cta-button primary">
+                    <i class="fas fa-phone-alt"></i> Contact Our Team
+                </a>
+                <a href="{% url 'journey' %}" class="cta-button secondary">
+                    <i class="fas fa-building"></i> Learn About Our Company
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'js/services.js' %}"></script>
+{% endblock %}
