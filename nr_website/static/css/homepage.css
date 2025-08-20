@@ -770,28 +770,26 @@ body { overflow-x: hidden; }
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 2rem 0;
+
 }
 
 .home-logo-slide {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 1rem;
     width: max-content;
-    animation: scrollLogos 30s linear infinite;
+    animation: scrollLogos 10s linear infinite;
+
 }
 
 .home-client-logos img {
-    height: 40px;
-    width: auto;
-    opacity: 0.6;
+    height: 150px;
+    width: 200px;
     transition: var(--transition);
-    filter: grayscale(100%);
 }
 
 .home-client-logos img:hover {
     opacity: 1;
-    filter: grayscale(0%);
 }
 
 /* CTA Section - Enhanced with gradient overlay */
