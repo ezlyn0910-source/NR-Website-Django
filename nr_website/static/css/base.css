@@ -21,15 +21,18 @@ body {
     padding: 0 2rem;
 }
 :root {
-    --primary-blue: #1A4B8C;
-    --secondary-blue: #2D6FC1;
-    --accent-green: #2E8B57;
-    --accent-gold: #D4AF37;
-    --dark-gray: #2D3748;
-    --medium-gray: #4A5568;
-    --light-gray: #F7FAFC;
-    --white: #FFFFFF;
+    --pinetree: #2C341B;           /* Deep navy blue */
+    --dustyblue: #809276;
+    --shadowgreen: #295740;         /* Rich professional blue */
+    --sagegreen: #537D5D;           /* Muted teal-green */
+    --accent-gold: #DAA112;            /* Elegant gold */
+    --dark-green: #0E2815;              /* Charcoal gray */
+    --morningblue: #94a59c;           /* Soft, clean light gray */
+    --bone: #e8ebc4;
+    --softyellow: #e0bb46;
+    --white: #FFFFFF;                  /* Pure white */
     --black: #000000;
+
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --box-shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -46,9 +49,9 @@ body {
     width: 100%;
     z-index: 1000;
     backdrop-filter: blur(10px);
-    background-color: rgba(26, 75, 140, 0.9);
+    background-color: var(--shadowgreen);
     transition: var(--transition);
-    padding: 1rem 0;
+    padding: 0.8rem 0;
 }
 
 .header.scrolled {
@@ -74,10 +77,17 @@ body {
     transition: var(--transition);
 }
 
-.logo svg {
-    width: 36px;
-    height: 36px;
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.company-logo {
+    width: 60px;
+    height: 60px;
     transition: var(--transition);
+    justify-items: center;
 }
 
 .logo-text-primary {
@@ -95,7 +105,7 @@ body {
 }
 
 .header.scrolled .logo-text-secondary {
-    color: var(--primary-blue);
+    color: var(--shadowgreen);
 }
 
 .mobile-menu-toggle {
@@ -164,6 +174,7 @@ body {
     position: relative;
     padding: 0.75rem 0;
     display: block;
+    justify-self: center;
 }
 
 .nav-link-content {
@@ -171,10 +182,11 @@ body {
     z-index: 1;
     display: inline-block;
     padding: 0.25rem 0;
+    justify-items: center;
 }
 
 .header.scrolled .nav-link {
-    color: var(--primary-blue);
+    color: var(--shadowgreen);
 }
 
 .nav-link::after {
@@ -195,12 +207,12 @@ body {
 }
 
 .nav-cta {
-    background: linear-gradient(135deg, var(--accent-green) 0%, var(--primary-blue) 100%);
+    background: var(--softyellow);
     color: var(--white) !important;
-    padding: 0.75rem 1.75rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 30px;
     transition: var(--transition);
-    box-shadow: 0 4px 15px rgba(26, 75, 140, 0.3);
+    box-shadow: 0 4px 15px rgba(20, 177, 52, 0.3);
     display: flex;
     align-items: center;
     gap: 8px;
@@ -264,11 +276,12 @@ body {
 /* Enhanced Footer Styles */
 /* ==================== */
 .footer {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    background: var(--shadowgreen);
     color: var(--white);
-    padding: 4rem 0 0;
+    padding: 6rem 0 0;
     position: relative;
     width: auto;
+    height: 653px;
 }
 
 

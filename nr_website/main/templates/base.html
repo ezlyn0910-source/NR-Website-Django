@@ -14,12 +14,8 @@
     <header id="main-header" class="header">
         <div class="header-container">
             <div class="logo-container">
-                <a href="{% url 'homepage' %}" class="logo">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 0C8.954 0 0 8.954 0 20C0 31.046 8.954 40 20 40C31.046 40 40 31.046 40 20C40 8.954 31.046 0 20 0ZM20 38C10.058 38 2 29.942 2 20C2 10.058 10.058 2 20 2C29.942 2 38 10.058 38 20C38 29.942 29.942 38 20 38Z" fill="currentColor"/>
-                        <path d="M20 6C12.268 6 6 12.268 6 20C6 27.732 12.268 34 20 34C27.732 34 34 27.732 34 20C34 12.268 27.732 6 20 6ZM20 32C13.373 32 8 26.627 8 20C8 13.373 13.373 8 20 8C26.627 8 32 13.373 32 20C32 26.627 26.627 32 20 32Z" fill="currentColor"/>
-                        <path d="M20 12C15.582 12 12 15.582 12 20C12 24.418 15.582 28 20 28C24.418 28 28 24.418 28 20C28 15.582 24.418 12 20 12ZM20 26C16.686 26 14 23.314 14 20C14 16.686 16.686 14 20 14C23.314 14 26 16.686 26 20C26 23.314 23.314 26 20 26Z" fill="currentColor"/>
-                    </svg>
+                <img src="{% static 'images/nrlogo.png' %}" class="company-logo">
+                <a href ="{% url 'homepage' %}">
                     <span class="company-name">
                         <span class="logo-text-primary">NR</span>
                         <span class="logo-text-secondary">Intellitech</span>
@@ -63,37 +59,19 @@
             <div class="footer-main">
                 <div class="footer-column footer-brand">
                     <div class="footer-logo">
-                        <svg width="48" height="48" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 0C8.954 0 0 8.954 0 20C0 31.046 8.954 40 20 40C31.046 40 40 31.046 40 20C40 8.954 31.046 0 20 0ZM20 38C10.058 38 2 29.942 2 20C2 10.058 10.058 2 20 2C29.942 2 38 10.058 38 20C38 29.942 29.942 38 20 38Z" fill="currentColor"/>
-                            <path d="M20 6C12.268 6 6 12.268 6 20C6 27.732 12.268 34 20 34C27.732 34 34 27.732 34 20C34 12.268 27.732 6 20 6ZM20 32C13.373 32 8 26.627 8 20C8 13.373 13.373 8 20 8C26.627 8 32 13.373 32 20C32 26.627 26.627 32 20 32Z" fill="currentColor"/>
-                            <path d="M20 12C15.582 12 12 15.582 12 20C12 24.418 15.582 28 20 28C24.418 28 28 24.418 28 20C28 15.582 24.418 12 20 12ZM20 26C16.686 26 14 23.314 14 20C14 16.686 16.686 14 20 14C23.314 14 26 16.686 26 20C26 23.314 23.314 26 20 26Z" fill="currentColor"/>
-                        </svg>
+                        <img src="{% static 'images/nrlogo.png' %}" class="company-logo">
                         <div class="footer-logo-text">
                             <span class="logo-text-primary">NR</span>
                             <span class="logo-text-secondary">Intellitech</span>
                         </div>
                     </div>
-                    <p class="footer-about">Driving digital transformation through innovative technology solutions since 2008.</p>
+                    <p class="footer-about">Driving digital transformation through innovative technology solutions since 2006.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Whatsapp" class="social-link">
                             <i class="fab fa-whatsapp"></i>
                             <span class="social-tooltip">WhatsApp</span>
                         </a>
                     </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h3 class="footer-heading">
-                        <span class="heading-icon"><i class="fas fa-link"></i></span>
-                        <span>Quick Links</span>
-                    </h3>
-                    <ul class="footer-links">
-                        <li><a href="{% url 'homepage' %}" class="footer-link"><span class="link-icon"><i class="fas fa-chevron-right"></i></span> Home</a></li>
-                        <li><a href="{% url 'journey' %}" class="footer-link"><span class="link-icon"><i class="fas fa-chevron-right"></i></span> Our Journey</a></li>
-                        <li><a href="{% url 'services' %}" class="footer-link"><span class="link-icon"><i class="fas fa-chevron-right"></i></span> Services</a></li>
-                        <li><a href="{% url 'news' %}" class="footer-link"><span class="link-icon"><i class="fas fa-chevron-right"></i></span> Insights</a></li>
-                        <li><a href="{% url 'contact' %}" class="footer-link"><span class="link-icon"><i class="fas fa-chevron-right"></i></span> Contact Us</a></li>
-                    </ul>
                 </div>
                 
                 <div class="footer-column">
@@ -134,29 +112,12 @@
                         </li>
                     </ul>
                     
-                    <div class="newsletter">
-                        <h4 class="newsletter-title">Subscribe to our newsletter</h4>
-                        <form class="newsletter-form" method="post" action="#">
-                            {% csrf_token %}
-                            <input type="email" name="email" placeholder="Your email address" required>
-                            <button type="submit" class="newsletter-btn">
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </form>
-                    </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
                 <div class="footer-copyright">
                     <p>&copy; <span id="current-year">2023</span> NR Intellitech. All rights reserved.</p>
-                </div>
-                <div class="footer-legal">
-                    <a href="#" class="legal-link">Privacy Policy</a>
-                    <span class="legal-separator">•</span>
-                    <a href="#" class="legal-link">Terms of Service</a>
-                    <span class="legal-separator">•</span>
-                    <a href="#" class="legal-link">Cookie Policy</a>
                 </div>
                 <div class="back-to-top">
                     <a href="#main-header" class="back-to-top-link" aria-label="Back to top">
