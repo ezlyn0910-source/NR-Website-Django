@@ -21,16 +21,16 @@ body {
     padding: 0 2rem;
 }
 :root {
-    --pinetree: #2C341B;           /* Deep navy blue */
+    --pinetree: #2C341B;          
     --dustyblue: #809276;
-    --shadowgreen: #295740;         /* Rich professional blue */
-    --sagegreen: #537D5D;           /* Muted teal-green */
-    --accent-gold: #DAA112;            /* Elegant gold */
-    --dark-green: #0E2815;              /* Charcoal gray */
-    --morningblue: #94a59c;           /* Soft, clean light gray */
+    --shadowgreen: #203a2d;         
+    --sagegreen: #537D5D;           
+    --accent-gold: #DAA112;           
+    --dark-green: #0E2815;              
+    --morningblue: #94a59c;          
     --bone: #e8ebc4;
     --softyellow: #e0bb46;
-    --white: #FFFFFF;                  /* Pure white */
+    --white: #FFFFFF;              
     --black: #000000;
 
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -48,8 +48,6 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    backdrop-filter: blur(10px);
-    background-color: var(--shadowgreen);
     transition: var(--transition);
     padding: 0.8rem 0;
 }

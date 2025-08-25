@@ -17,6 +17,25 @@
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.381);
     --box-shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.15);
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+
+    --pinetree: #2C341B;          
+    --dustyblue: #809276;
+    --shadowgreen: #295740;       
+    --sagegreen: #537D5D;          
+    --accent-gold: #DAA112;           
+    --dark-green: #0E2815;              
+    --morningblue: #94a59c;           
+    --bone: #e8ebc4;
+    --softyellow: #e0bb46;
+    --white: #FFFFFF;                 
+    --black: #000000;              
+
+    --glow-green: 0 0 15px rgba(176, 194, 181, 0.76); 
+    --softyellow-border: 1px solid var(--softyellow);
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.231);
+    --box-shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 /* Utility untuk buat section jadi selebar viewport walaupun di dalam .container */
