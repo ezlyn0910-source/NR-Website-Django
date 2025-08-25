@@ -23,7 +23,7 @@ body {
 :root {
     --pinetree: #2C341B;          
     --dustyblue: #809276;
-    --shadowgreen: #203a2d;         
+    --shadowgreens: #1f382c;         
     --sagegreen: #537D5D;           
     --accent-gold: #DAA112;           
     --dark-green: #0E2815;              
@@ -89,7 +89,7 @@ body {
 }
 
 .logo-text-primary {
-    color: var(--accent-gold);
+    color: var(--shadowgreens);
     font-weight: 700;
     font-size: 1.4rem;
     transition: var(--transition);
@@ -274,7 +274,7 @@ body {
 /* Enhanced Footer Styles */
 /* ==================== */
 .footer {
-    background: var(--shadowgreen);
+    background: var(--shadowgreens);
     color: var(--white);
     padding: 6rem 0 0;
     position: relative;
